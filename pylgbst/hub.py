@@ -381,7 +381,7 @@ class SmartHub(Hub):
                 log.debug("All devices are present: %s", devices)
                 return
             log.debug("Waiting for builtin devices to appear: %s", devices)
-            time.sleep(0.1)
+            time.sleep(1)
         log.warning("Got only these devices: %s", get_dev_set())
 
     # noinspection PyTypeChecker
